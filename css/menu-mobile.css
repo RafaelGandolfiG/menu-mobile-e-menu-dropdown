@@ -1,9 +1,9 @@
-[data-menu="button"] {
+.menu button {
   display: none;
 }
 
 @media (max-width: 700px) {
-  .menu [data-menu="button"] {
+  .menu button{
     display: flex;
     background: #222;
     border: none;
@@ -19,7 +19,7 @@
     position: relative;
     z-index: 300;
   }
-  .menu [data-menu="list"] {
+  .menu .lista {
     display: none;
     position: absolute;
     background: #FB5;
@@ -29,7 +29,7 @@
     padding-top: 60px;
     box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
   }
-  .menu:hover [data-menu="list"] {
+  .menu:hover .lista {
     display: block;
     animation: show-right .3s forwards;
   }
